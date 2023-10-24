@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="text/js" href="./js/main.js" />
+
+    <title>Interactive ABCs of CSS</title>
+  </head>
+  <body>
+    <p>Welcome to the Interactive ABCs of CSS Technology Learning Website</p>
+    <p>
+      Click on the buttons below to reveal and learn the CSS technology
+      features of the corresponding letters
+    </p>
+
+    <div class="content">
+      <div class="box1">
+        <img
+          id="img1"
+          src="./media/images/css-letter-a.png"
+          alt="A picture that reads 'A is for aspect-ratio'"
+          style="display: none;"
+          /><br />
+          <button id="hide1" onClick="hideImage1()" style="display:none;">hide result</button><br/>
+          <button id="buttonA" onClick="showImage1()">A</button>
+
+          <script>
+            const showImage1 = () => {
+              document.getElementById("img1").style.display = 'inline';
+              document.getElementById("hide1").style.display = 'inline';
+            }
+            const hideImage1 = () => {
+              document.getElementById("img1").style.display = 'none';
+              document.getElementById("hide1").style.display = 'none';
+            }
+          </script>
+      </div>
+
+      <div class="box2">
+        <img
+          id="img2"
+          src="./media/images/css-letter-b.png"
+          alt="A picture that reads 'B is for border'"
+          style="display: none;"
+        /><br />
+        <button id="hide2" onClick="hideImage2()" style="display:none;">hide result</button></br>
+        <button id="buttonB" onClick="showImage2()">B</button>
+
+        <script>
+          const showImage2 = () => {
+            document.getElementById("img2").style.display = 'inline';
+            document.getElementById("hide2").style.display = 'inline';
+          }
+          const hideImage2 = () => {
+            document.getElementById("img2").style.display = 'none';
+            document.getElementById("hide2").style.display = 'none';
+          }
+        </script>
+      </div>
+
+      <div class="box3">
+        <img
+          id="img3"
+          src="./media/images/css-letter-c.png"
+          alt="A picture that reads 'C is for colors'"
+          style="display: none;"
+        /><br />
+        <button id="hide3" onclick="hideImage3()" style="display:none;">hide result</button><br/>
+        <button id="buttonC" onclick="showImage3()">C</button>
+        
+        <script>
+          const showImage3 = () => {
+            document.getElementById("img3").style.display = 'inline';
+            document.getElementById("hide3").style.display = 'inline';
+          }
+          const hideImage3 = () => {
+            document.getElementById("img3").style.display = 'none';
+            document.getElementById("hide3").style.display = 'none';
+          }
+        </script>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
